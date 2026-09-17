@@ -1,0 +1,888 @@
+{
+  "aulas": [
+    "i1",
+    "i2",
+    "i3",
+    "i4",
+    "i5",
+    "i6",
+    "i7",
+    "i8",
+    "i9",
+    "i10",
+    "i11",
+    "i12"
+  ],
+  "clases": [
+    {
+      "aula": "i7",
+      "materia": "Resolución de Problemas y Algoritmos (REC)",
+      "profesor": "Aranda",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "10:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Elementos de Álgebra (REC)",
+      "profesor": "Garces",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Elementos de Álgebra (REC)",
+      "profesor": "Garces",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Elementos de Teoría de la Computación",
+      "profesor": "Kogan",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "08:00",
+      "hora_fin": "10:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Desarrollo de Algoritmos (Práctica)",
+      "profesor": "Martinez Carod",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "10:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Elementos de Álgebra Lineal",
+      "profesor": "Pozzebon",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "miercoles",
+      "hora_inicio": "10:00",
+      "hora_fin": "13:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Elementos de Álgebra Lineal",
+      "profesor": "Pozzebon",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "miercoles",
+      "hora_inicio": "10:00",
+      "hora_fin": "13:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Elementos de Álgebra (REC)",
+      "profesor": "Garces",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Elementos de Álgebra (REC)",
+      "profesor": "Garces",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Desarrollo de Algoritmos (Teoría)",
+      "profesor": "Martinez Carod",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "08:30",
+      "hora_fin": "10:30"
+    },
+    {
+      "aula": "i7",
+      "materia": "Desarrollo de Algoritmos (Práctica)",
+      "profesor": "Martinez Carod",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "10:30",
+      "hora_fin": "12:30"
+    },
+    {
+      "aula": "i7",
+      "materia": "Modelado de Datos Mod. 2 (Teoría)",
+      "profesor": "Bain",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "16:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Modelado de Datos Mod. 2 (Práctica)",
+      "profesor": "Bain",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "18:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Elementos de Teoría de la Computación",
+      "profesor": "Kogan",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "17:30",
+      "hora_fin": "19:30"
+    },
+    {
+      "aula": "i7",
+      "materia": "Modelado de Datos Mod. 1 (Teoría)",
+      "profesor": "Amaolo",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Modelado de Datos Mod. 1 (Práctica)",
+      "profesor": "Amaolo",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "miercoles",
+      "hora_inicio": "18:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Elementos de Teoría de la Computación",
+      "profesor": "Kogan",
+      "carrera": "LCC/LSI/PI",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "19:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Programación Concurrente (Teoría)",
+      "profesor": "Amaro",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "lunes",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Arquitecturas y Organización de Computadoras I",
+      "profesor": "Zurita",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "miercoles",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Arquitecturas y Organización de Computadoras I",
+      "profesor": "Zurita",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "viernes",
+      "hora_inicio": "09:00",
+      "hora_fin": "12:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Métodos Computacionales para el Cálculo",
+      "profesor": "Allan",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "lunes",
+      "hora_inicio": "13:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Ingeniería de Requerimientos (Teoría)",
+      "profesor": "De Renzis",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "lunes",
+      "hora_inicio": "18:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Ingeniería de Requerimientos (Práctica)",
+      "profesor": "De Renzis",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "martes",
+      "hora_inicio": "18:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Métodos Computacionales para el Cálculo",
+      "profesor": "Allan",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "miercoles",
+      "hora_inicio": "13:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Programación Concurrente (Teoría)",
+      "profesor": "Zoratto",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Teoría de la Computación II (Teoría)",
+      "profesor": "Parra",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "jueves",
+      "hora_inicio": "14:30",
+      "hora_fin": "16:30"
+    },
+    {
+      "aula": "i5",
+      "materia": "Teoría de la Computación II (Práctica)",
+      "profesor": "Parra",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "jueves",
+      "hora_inicio": "17:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Inglés Técnico II",
+      "profesor": "A confirmar",
+      "carrera": "LCC/LSI/PI",
+      "anio": 2,
+      "dia": "viernes",
+      "hora_inicio": "12:00",
+      "hora_fin": "14:00"
+    },
+    {
+      "aula": "i6",
+      "materia": "Redes de Computadoras I",
+      "profesor": "Zanellato",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "martes",
+      "hora_inicio": "13:00",
+      "hora_fin": "15:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Métodos Computacionales para el Cálculo (Solo Profesorado)",
+      "profesor": "Allan",
+      "carrera": "PI",
+      "anio": 3,
+      "dia": "lunes",
+      "hora_inicio": "13:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Lógica para Ciencias de la Computación (Práctica)",
+      "profesor": "Cecchi - Gimenez",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "lunes",
+      "hora_inicio": "15:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Gestión de Proyectos de Desarrollo de Software (Práctica)",
+      "profesor": "Luzuriaga",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "martes",
+      "hora_inicio": "15:30",
+      "hora_fin": "17:30"
+    },
+    {
+      "aula": "i5",
+      "materia": "Lógica para Ciencias de la Computación (Teoría)",
+      "profesor": "Cecchi - Gimenez",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "miercoles",
+      "hora_inicio": "14:30",
+      "hora_fin": "17:30"
+    },
+    {
+      "aula": "i10",
+      "materia": "Gestión de Proyectos de Desarrollo de Software (Teoría)",
+      "profesor": "Luzuriaga",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "jueves",
+      "hora_inicio": "15:30",
+      "hora_fin": "17:30"
+    },
+    {
+      "aula": "i6",
+      "materia": "Redes de Computadoras I",
+      "profesor": "Zanellato",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "viernes",
+      "hora_inicio": "13:00",
+      "hora_fin": "15:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Gestión de Bases de Datos (Teoría)",
+      "profesor": "A confirmar",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "viernes",
+      "hora_inicio": "15:00",
+      "hora_fin": "17:00"
+    },
+    {
+      "aula": "i10",
+      "materia": "Gestión de Bases de Datos (Práctica)",
+      "profesor": "A confirmar",
+      "carrera": "LCC/LSI/PI",
+      "anio": 3,
+      "dia": "viernes",
+      "hora_inicio": "17:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Conceptos Avanzados de Lenguajes de Programación",
+      "profesor": "Vaucheret",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "lunes",
+      "hora_inicio": "15:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Conceptos Avanzados de Lenguajes de Programación",
+      "profesor": "Vaucheret",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "martes",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Diseño de Algoritmos (Teoría)",
+      "profesor": "Zoratto",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "martes",
+      "hora_inicio": "16:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Especificación con Métodos Formales (Teoría)",
+      "profesor": "Flores",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "miercoles",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Aspectos Profesionales y Sociales",
+      "profesor": "Grosso",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Inteligencia Artificial (Teoría)",
+      "profesor": "Cecchi - Marinelli",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "jueves",
+      "hora_inicio": "15:00",
+      "hora_fin": "17:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Inteligencia Artificial (Práctica)",
+      "profesor": "Cecchi - Marinelli",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "jueves",
+      "hora_inicio": "17:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Diseño de Algoritmos (Práctica)",
+      "profesor": "Zoratto",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "viernes",
+      "hora_inicio": "15:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Especificación con Métodos Formales (Práctica)",
+      "profesor": "Flores",
+      "carrera": "LCC",
+      "anio": 4,
+      "dia": "viernes",
+      "hora_inicio": "18:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i6",
+      "materia": "Laboratorio de Bases de Datos (Teoría-Práctica)",
+      "profesor": "Mazalu",
+      "carrera": "LSI",
+      "anio": 4,
+      "dia": "lunes",
+      "hora_inicio": "16:30",
+      "hora_fin": "20:30"
+    },
+    {
+      "aula": "i9",
+      "materia": "Sistemas de Información II (Teoría/Práctica)",
+      "profesor": "Martinez",
+      "carrera": "LSI",
+      "anio": 4,
+      "dia": "martes",
+      "hora_inicio": "15:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i6",
+      "materia": "Depósito y Minería de Datos (Teoría/Práctica)",
+      "profesor": "Buccella",
+      "carrera": "LSI",
+      "anio": 4,
+      "dia": "miercoles",
+      "hora_inicio": "15:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Especificación de Diseño de Software (Teoría)",
+      "profesor": "De Renzis",
+      "carrera": "LSI",
+      "anio": 4,
+      "dia": "viernes",
+      "hora_inicio": "17:00",
+      "hora_fin": "19:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Especificación de Diseño de Software (Práctica)",
+      "profesor": "De Renzis",
+      "carrera": "LSI",
+      "anio": 4,
+      "dia": "viernes",
+      "hora_inicio": "19:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Técnicas para Minería de Datos",
+      "profesor": "Roger",
+      "carrera": "LCC",
+      "anio": 5,
+      "dia": "lunes",
+      "hora_inicio": "13:00",
+      "hora_fin": "17:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Laboratorio de Inteligencia Artificial",
+      "profesor": "Braun",
+      "carrera": "LCC",
+      "anio": 5,
+      "dia": "miercoles",
+      "hora_inicio": "13:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Aprendizaje Automático Profundo (Electiva)",
+      "profesor": "Roger",
+      "carrera": "LCC",
+      "anio": 5,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Laboratorio de Inteligencia Artificial",
+      "profesor": "Braun",
+      "carrera": "LCC",
+      "anio": 5,
+      "dia": "jueves",
+      "hora_inicio": "13:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i12",
+      "materia": "Reingeniería de Software y Procesos",
+      "profesor": "Luzuriaga",
+      "carrera": "LSI",
+      "anio": 5,
+      "dia": "lunes",
+      "hora_inicio": "15:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i12",
+      "materia": "Sistemas de Información para la Web (Teoría/Práctica)",
+      "profesor": "A confirmar",
+      "carrera": "LSI",
+      "anio": 5,
+      "dia": "lunes",
+      "hora_inicio": "19:00",
+      "hora_fin": "22:00"
+    },
+    {
+      "aula": "i12",
+      "materia": "Construcción y Validación de Software",
+      "profesor": "Arias",
+      "carrera": "LSI",
+      "anio": 5,
+      "dia": "martes",
+      "hora_inicio": "17:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i8",
+      "materia": "Aspectos Profesionales y Sociales",
+      "profesor": "Grosso",
+      "carrera": "LSI",
+      "anio": 5,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i9",
+      "materia": "Diseño y Construcción de Web Accesible (Electiva)",
+      "profesor": "Mazalu",
+      "carrera": "LSI",
+      "anio": 5,
+      "dia": "jueves",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Inglés Técnico (Teoría)",
+      "profesor": "Denham",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Inglés Técnico (Teoría)",
+      "profesor": "Denham",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Matemática General (Mod.2)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "14:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Matemática General (Mod.2)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "14:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Matemática General (Mod.1)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "18:00",
+      "hora_fin": "22:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Matemática General (Mod.1)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "martes",
+      "hora_inicio": "18:00",
+      "hora_fin": "22:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Matemática General (Mod.2)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "14:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Matemática General (Mod.2)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "14:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Matemática General (Mod.1)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "18:00",
+      "hora_fin": "22:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Matemática General (Mod.1)",
+      "profesor": "Vazquez",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "18:00",
+      "hora_fin": "22:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Inglés Técnico (Mod.1 - Práctica)",
+      "profesor": "Denham",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "viernes",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Inglés Técnico (Mod.1 - Práctica)",
+      "profesor": "Denham",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "viernes",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Inglés Técnico (Mod.2 - Práctica)",
+      "profesor": "Denham",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "viernes",
+      "hora_inicio": "16:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Inglés Técnico (Mod.2 - Práctica)",
+      "profesor": "Denham",
+      "carrera": "TUDW/TUASSL",
+      "anio": 1,
+      "dia": "viernes",
+      "hora_inicio": "16:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i7",
+      "materia": "Introducción a la Programación (Mod.1 - Práctica)",
+      "profesor": "Reynoso",
+      "carrera": "TUDW",
+      "anio": 1,
+      "dia": "jueves",
+      "hora_inicio": "16:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i11",
+      "materia": "Diseño Gráfico",
+      "profesor": "Parra S.",
+      "carrera": "TUDW",
+      "anio": 2,
+      "dia": "martes",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i6",
+      "materia": "Programación Web Dinámica",
+      "profesor": "Carrasco",
+      "carrera": "TUDW",
+      "anio": 2,
+      "dia": "jueves",
+      "hora_inicio": "15:00",
+      "hora_fin": "18:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Programación Web Dinámica",
+      "profesor": "Carrasco",
+      "carrera": "TUDW",
+      "anio": 2,
+      "dia": "viernes",
+      "hora_inicio": "15:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Framework e Interoperabilidad",
+      "profesor": "Cruz",
+      "carrera": "TUDW",
+      "anio": 3,
+      "dia": "lunes",
+      "hora_inicio": "18:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Trabajo Final Desarrollo Web",
+      "profesor": "Dolz",
+      "carrera": "TUDW",
+      "anio": 3,
+      "dia": "martes",
+      "hora_inicio": "17:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Framework e Interoperabilidad",
+      "profesor": "Cruz",
+      "carrera": "TUDW",
+      "anio": 3,
+      "dia": "miercoles",
+      "hora_inicio": "18:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i5",
+      "materia": "Trabajo Final Desarrollo Web",
+      "profesor": "Dolz",
+      "carrera": "TUDW",
+      "anio": 3,
+      "dia": "jueves",
+      "hora_inicio": "19:00",
+      "hora_fin": "21:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Introducción a la Computación",
+      "profesor": "Balladini",
+      "carrera": "TUASSL",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Introducción a la Computación",
+      "profesor": "Balladini",
+      "carrera": "TUASSL",
+      "anio": 1,
+      "dia": "lunes",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i1",
+      "materia": "Introducción a la Computación",
+      "profesor": "Balladini",
+      "carrera": "TUASSL",
+      "anio": 1,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i4",
+      "materia": "Introducción a la Computación",
+      "profesor": "Balladini",
+      "carrera": "TUASSL",
+      "anio": 1,
+      "dia": "miercoles",
+      "hora_inicio": "16:00",
+      "hora_fin": "20:00"
+    },
+    {
+      "aula": "i6",
+      "materia": "Software Libre",
+      "profesor": "Lechner",
+      "carrera": "TUASSL",
+      "anio": 2,
+      "dia": "martes",
+      "hora_inicio": "18:00",
+      "hora_fin": "20:00"
+    }
+  ]
+}

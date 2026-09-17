@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>faistatus</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="marca">
+      <img src="logo.png" alt="Logo FAI">
+      <h1>faistatus</h1>
+    </div>
+    <div class="reloj">
+      <span id="reloj-dia">—</span>
+      <strong id="reloj-hora">—:—</strong>
+    </div>
+  </header>
+
+  <div class="edificio">
+    <div class="planta" id="planta-baja"></div>
+    <div class="planta" id="planta-alta"></div>
+  </div>
+
+  <p class="footer-nota">Tocá un aula para ver el horario completo de la semana. Si un profesor te avisó de un cambio, reportalo con el botón de abajo.</p>
+</div>
+
+<div class="backdrop" id="backdrop"></div>
+<div class="panel" id="panel" role="dialog" aria-modal="true">
+  <button class="cerrar" id="cerrar-panel" aria-label="Cerrar">×</button>
+  <div id="panel-contenido"></div>
+</div>
+
+<button class="fab" id="fab-btn" aria-label="Reportar cambio de horario" title="Reportar cambio de horario">!</button>
+<div class="fab-panel" id="fab-panel">
+  <h3>Reportar un cambio</h3>
+  <p>¿Tu profe avisó un cambio de aula u horario? Contanos y lo revisamos.</p>
+  <form id="fab-form" action="https://formspree.io/f/xjykvlog" method="POST">
+    <label for="f-aula">Aula</label>
+    <select id="f-aula" name="aula" required></select>
+
+    <label for="f-dia">Día</label>
+    <select id="f-dia" name="dia" required>
+      <option value="lunes">Lunes</option>
+      <option value="martes">Martes</option>
+      <option value="miercoles">Miércoles</option>
+      <option value="jueves">Jueves</option>
+      <option value="viernes">Viernes</option>
+      <option value="sabado">Sábado</option>
+    </select>
+
+    <label for="f-mensaje">¿Qué cambió?</label>
+    <textarea id="f-mensaje" name="mensaje" placeholder="Ej: la clase de Álgebra se movió al i9 a las 18hs" required></textarea>
+
+    <label for="f-mail">Tu mail (opcional, por si hay que confirmar algo)</label>
+    <input id="f-mail" name="email" type="email" placeholder="nombre@ejemplo.com">
+
+    <button type="submit">Enviar reporte</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
