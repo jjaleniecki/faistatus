@@ -34,6 +34,7 @@ function claseDe(aula) {
 }
 
 let anioFiltro = "todos";
+let carreraFiltro = "todos";
 let aulaAbierta = null;
 let mostrarTodas = false;
 
@@ -51,7 +52,7 @@ function crearCard(aula, diaActual, minActual) {
   const clase = claseEnCurso(aula, diaActual, minActual);
   const card = document.createElement("button");
   card.className = "card";
-  card.setAttribute("aria-label", `Aula ${aula.toUpperCase()}, ${clase ? "ocupada" : "libre"}`);
+  card.setAttribute("aria-label", `Aula ${aula}, ${clase ? "ocupada" : "libre"}`);
 
   let pillHtml, cuerpoHtml;
   if (clase) {
@@ -61,7 +62,8 @@ function crearCard(aula, diaActual, minActual) {
     cuerpoHtml = `<div class="detalle-corto">
       <div class="dc-materia">${clase.materia}</div>
       <div class="dc-profe">${clase.profesor}</div>
-      <div class="dc-meta">${clase.carrera} · ${clase.anio}° año · hasta ${clase.hora_fin}</div>
+      <div class="dc-carrera">${clase.carrera}</div>
+      <div class="dc-anio">${clase.anio}° año · hasta ${clase.hora_fin}</div>
     </div>`;
   } else {
     pillHtml = `<span class="pill libre">libre</span>`;
@@ -69,7 +71,7 @@ function crearCard(aula, diaActual, minActual) {
   }
 
   card.innerHTML = `
-    <span class="id">${aula.toUpperCase()}</span>
+    <span class="id">${aula}</span>
     ${pillHtml}
     ${cuerpoHtml}
   `;
@@ -112,7 +114,7 @@ function renderPanel() {
   }
 
   document.getElementById("panel-contenido").innerHTML = `
-    <h2>${aulaAbierta.toUpperCase()}</h2>
+    <h2>${aulaAbierta}</h2>
     <div class="estado-actual">${estadoHtml}</div>
     <button class="ver-todas ${mostrarTodas ? "abierto" : ""}" id="btn-ver-todas">
       <span>${mostrarTodas ? "Ocultar horario completo" : "Ver todas las clases de esta aula"}</span>
@@ -133,14 +135,30 @@ function renderPanel() {
 
 function renderHorarioCompleto() {
   const todas = claseDe(aulaAbierta);
-  const anios = [...new Set(todas.map(c => c.anio))].sort((a,b) => a-b);
 
-  const tabsHtml = `
+  // Carreras disponibles en esta aula (fila 1)
+  const carreras = [...new Set(todas.map(c => c.carrera))].sort();
+
+  // Años disponibles dentro de la carrera ya elegida (o de todas si no eligió ninguna) (fila 2)
+  const universoParaAnios = carreraFiltro === "todos"
+    ? todas
+    : todas.filter(c => c.carrera === carreraFiltro);
+  const anios = [...new Set(universoParaAnios.map(c => c.anio))].sort((a,b) => a-b);
+
+  const tabsCarreraHtml = `
+    <button data-carrera="todos" class="${carreraFiltro === "todos" ? "activo" : ""}">Todas</button>
+    ${carreras.map(c => `<button data-carrera="${c}" class="${carreraFiltro === c ? "activo" : ""}">${c}</button>`).join("")}
+  `;
+  const tabsAnioHtml = `
     <button data-anio="todos" class="${anioFiltro === "todos" ? "activo" : ""}">Todos</button>
     ${anios.map(a => `<button data-anio="${a}" class="${anioFiltro == a ? "activo" : ""}">${a}° año</button>`).join("")}
   `;
 
-  const diasConClases = ORDEN_DIAS.filter(d => todas.some(c => c.dia === d && (anioFiltro === "todos" || c.anio == anioFiltro)));
+  const coincide = c =>
+    (carreraFiltro === "todos" || c.carrera === carreraFiltro) &&
+    (anioFiltro === "todos" || c.anio == anioFiltro);
+
+  const diasConClases = ORDEN_DIAS.filter(d => todas.some(c => c.dia === d && coincide(c)));
 
   let cuerpoHtml;
   if (diasConClases.length === 0) {
@@ -148,7 +166,7 @@ function renderHorarioCompleto() {
   } else {
     cuerpoHtml = diasConClases.map(dia => {
       const clasesDia = todas
-        .filter(c => c.dia === dia && (anioFiltro === "todos" || c.anio == anioFiltro))
+        .filter(c => c.dia === dia && coincide(c))
         .sort((a,b) => horaAMin(a.hora_inicio) - horaAMin(b.hora_inicio));
       return `
         <div class="dia-bloque">
@@ -159,7 +177,8 @@ function renderHorarioCompleto() {
               <div class="info">
                 <div class="materia">${c.materia}</div>
                 <div class="profe">${c.profesor}</div>
-                <div class="anio">${c.carrera} · ${c.anio}° año</div>
+                <div class="carrera">${c.carrera}</div>
+                <div class="anio">${c.anio}° año</div>
               </div>
             </div>
           `).join("")}
@@ -169,11 +188,19 @@ function renderHorarioCompleto() {
   }
 
   document.getElementById("horario-completo").innerHTML = `
-    <div class="tabs" id="tabs">${tabsHtml}</div>
+    <div class="tabs tabs-carrera" id="tabs-carrera">${tabsCarreraHtml}</div>
+    <div class="tabs tabs-anio" id="tabs-anio">${tabsAnioHtml}</div>
     ${cuerpoHtml}
   `;
 
-  document.querySelectorAll("#tabs button").forEach(btn => {
+  document.querySelectorAll("#tabs-carrera button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      carreraFiltro = btn.dataset.carrera;
+      anioFiltro = "todos"; // los años disponibles cambian según la carrera elegida
+      renderHorarioCompleto();
+    });
+  });
+  document.querySelectorAll("#tabs-anio button").forEach(btn => {
     btn.addEventListener("click", () => {
       anioFiltro = btn.dataset.anio;
       renderHorarioCompleto();
@@ -184,6 +211,7 @@ function renderHorarioCompleto() {
 function abrirPanel(aula) {
   aulaAbierta = aula;
   anioFiltro = "todos";
+  carreraFiltro = "todos";
   mostrarTodas = false;
   renderPanel();
   document.getElementById("backdrop").classList.add("activo");
@@ -231,7 +259,7 @@ async function init() {
   AULAS.forEach(a => {
     const opt = document.createElement("option");
     opt.value = a;
-    opt.textContent = a.toUpperCase();
+    opt.textContent = a;
     selectAula.appendChild(opt);
   });
 

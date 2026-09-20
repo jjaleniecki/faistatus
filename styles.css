@@ -135,9 +135,9 @@ header.top .reloj strong {
   outline-offset: 2px;
 }
 .card .id {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
+  font-size: 28px;
   line-height: 1;
 }
 .pill {
@@ -168,7 +168,11 @@ header.top .reloj strong {
   color: var(--ink-soft);
   font-size: 13px;
 }
-.card .dc-meta {
+.card .dc-carrera {
+  color: var(--ink-soft);
+  font-size: 12.5px;
+}
+.card .dc-anio {
   color: var(--ink-soft);
   font-size: 12.5px;
 }
@@ -232,7 +236,8 @@ header.top .reloj strong {
 .panel .cerrar:hover { background: var(--bg); }
 
 .panel h2 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
   font-size: 40px;
   margin: 0 0 4px;
 }
@@ -298,6 +303,9 @@ header.top .reloj strong {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.tabs-anio {
   margin-bottom: 16px;
   border-bottom: 1px solid var(--line);
   padding-bottom: 12px;
@@ -347,6 +355,7 @@ header.top .reloj strong {
 }
 .clase-item .info .materia { font-weight: 600; }
 .clase-item .info .profe { color: var(--ink-soft); font-size: 13.5px; }
+.clase-item .info .carrera { color: var(--ink-soft); font-size: 12.5px; }
 .clase-item .info .anio { color: var(--ink-soft); font-size: 12.5px; }
 .sin-clases { color: var(--ink-soft); font-style: italic; font-size: 14px; padding: 8px 0; }
 
