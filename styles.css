@@ -38,7 +38,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'JetBrains Mono', monospace;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
@@ -70,14 +70,14 @@ header.top .marca img {
   display: block;
 }
 header.top h1 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
   font-size: clamp(28px, 5vw, 40px);
   margin: 0;
   letter-spacing: -0.01em;
 }
 header.top .reloj {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 15px;
   color: var(--ink-soft);
   text-align: right;
@@ -135,13 +135,13 @@ header.top .reloj strong {
   outline-offset: 2px;
 }
 .card .id {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
   font-size: 28px;
   line-height: 1;
 }
 .pill {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   font-weight: 600;
   padding: 3px 9px;
@@ -236,7 +236,7 @@ header.top .reloj strong {
 .panel .cerrar:hover { background: var(--bg); }
 
 .panel h2 {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
   font-size: 40px;
   margin: 0 0 4px;
@@ -251,7 +251,7 @@ header.top .reloj strong {
   border-radius: 10px;
 }
 .ahora-materia {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
   font-size: 19px;
   margin-bottom: 8px;
@@ -265,7 +265,7 @@ header.top .reloj strong {
   display: inline-block;
   min-width: 90px;
   color: var(--ink-soft);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -275,7 +275,7 @@ header.top .reloj strong {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   font-weight: 600;
   padding: 12px 16px;
@@ -311,7 +311,7 @@ header.top .reloj strong {
   padding-bottom: 12px;
 }
 .tabs button {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   font-weight: 600;
   padding: 6px 12px;
@@ -329,7 +329,7 @@ header.top .reloj strong {
 
 .dia-bloque { margin-bottom: 18px; }
 .dia-bloque h3 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   text-transform: lowercase;
   font-variant: small-caps;
@@ -347,7 +347,7 @@ header.top .reloj strong {
 }
 .dia-bloque .clase-item:first-of-type { border-top: none; }
 .clase-item .hora {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   color: var(--ink-soft);
   white-space: nowrap;
@@ -374,7 +374,7 @@ header.top .reloj strong {
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
   z-index: 12;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 .fab:hover { transform: translateY(-2px); }
 
@@ -396,7 +396,7 @@ header.top .reloj strong {
 }
 .fab-panel.activo { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .fab-panel h3 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 15px;
   margin: 0 0 4px;
 }
@@ -408,7 +408,7 @@ header.top .reloj strong {
 }
 .fab-panel form { display: flex; flex-direction: column; gap: 8px; }
 .fab-panel label {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   color: var(--ink-soft);
 }
@@ -424,7 +424,7 @@ header.top .reloj strong {
 .fab-panel textarea { resize: vertical; min-height: 60px; }
 .fab-panel button[type="submit"] {
   margin-top: 4px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
   font-size: 14px;
   padding: 9px;

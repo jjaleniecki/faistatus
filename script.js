@@ -264,7 +264,17 @@ async function init() {
   });
 
   renderGrid();
-  setInterval(renderGrid, 60 * 1000); // recalcula estado cada minuto
+  programarRefrescoSincronizado();
+}
+
+function programarRefrescoSincronizado() {
+  const ahora = new Date();
+  // Milisegundos que faltan hasta el próximo segundo ":00" del reloj real.
+  const msHastaProximoMinuto = 60000 - (ahora.getSeconds() * 1000 + ahora.getMilliseconds());
+  setTimeout(() => {
+    renderGrid();
+    setInterval(renderGrid, 60 * 1000); // a partir de acá, cada minuto exacto
+  }, msHastaProximoMinuto);
 }
 
 init();
