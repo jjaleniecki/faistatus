@@ -435,7 +435,7 @@
       "hora_fin": "20:00"
     },
     {
-      "aula": "i8",
+      "aula": "i10",
       "materia": "Inteligencia Artificial (Teoría)",
       "profesor": "Cecchi - Marinelli",
       "carrera": "LCC",
@@ -445,7 +445,7 @@
       "hora_fin": "17:00"
     },
     {
-      "aula": "i8",
+      "aula": "i10",
       "materia": "Inteligencia Artificial (Práctica)",
       "profesor": "Cecchi - Marinelli",
       "carrera": "LCC",
